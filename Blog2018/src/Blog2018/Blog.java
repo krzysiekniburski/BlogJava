@@ -2,6 +2,7 @@
 package Blog2018;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
@@ -49,8 +50,8 @@ public class Blog {
         }
         Comment result=allComments.get(0);
         for(Comment comment: allComments){
-            LocalDate d1=comment.getDate();
-            LocalDate d2=comment.getDate();
+            LocalDateTime d1=comment.getDate();
+            LocalDateTime d2=comment.getDate();
             if(d1.isAfter(d2)){
                 result=comment;
             }
