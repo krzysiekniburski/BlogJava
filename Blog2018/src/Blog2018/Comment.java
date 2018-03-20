@@ -22,9 +22,6 @@ public class Comment implements Comparable<Comment> {
         this.date=LocalDateTime.now();
     }
     
-    
-
-   
 
     public String getContent() {
         return content;
